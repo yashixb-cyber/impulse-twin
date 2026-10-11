@@ -1,0 +1,24 @@
+__pycache__/
+*.pyc
+.venv/
+bench.log
+
+# Run logs and resumable benchmark parts are scratch, regenerated on every run.
+*.log
+bench_parts/
+_preview_app.html
+
+# CPRI's own material (problem statement PDF, Excel reference solution).
+# Kept out of history on purpose: removing it later means rewriting history,
+# and it must never reach a public remote. Copy the two files from CPRI's
+# email into data/ to run `regression.py --cpri` (see CLAUDE.md §1b).
+data/
+
+# Nested working copy, video build scratch, and local tooling: not part of the repo.
+impulse-twin/
+video/_build/
+council-transcript-*.md
+cpri_email_draft.md
+.agents/
+.claude/
+skills-lock.json
